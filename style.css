@@ -5,6 +5,7 @@ body {
     flex-direction: column;
     gap: 3em; /* vahe elementide vahel */
     align-items: center;
+    background-color: beige;
 }
 /* #-ga viitame elemendile, millel on selline id */
 #photo {
@@ -34,11 +35,21 @@ body {
     align-items: center;
     background-color: #D9D9D9;
     padding: 5em 1.5em 1.5em;
+      border-radius: 25px;
+  border: 2px solid #73AD21;
 }
 
 img {
     object-fit: contain;
+    height: 100%;
+    width: 100%;
 }
+
+#mees{
+    width: 200px;
+
+}
+
 
 .icon {
     max-width: 10em;
@@ -58,4 +69,12 @@ button {
 button:hover {
     background-color: #C8C6C6;
     cursor: pointer;
+}
+button {
+    background-color: blue;
+    color: red;
+
+}
+button:hover {
+    background: aquamarine;
 }
