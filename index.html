@@ -11,23 +11,22 @@
 <!-- Pealkiri, pilt ja väike kirjeldus -->
 
 <div class="container" style="padding: 1em">
+    <img id="photo" src="images/herbert1.png">
     <div id="textBox">
-        <h1>Nimetus</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Curabitur eget lectus mi. Donec lorem magna,
-            elementum ac dui in, posuere pharetra odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Curabitur eget lectus mi. Donec lorem magna, elementum ac dui in, posuere pharetra odio.</p>
+        <h1>Herbert</h1>
+        <p>Herbert is an elderly neighbor of the Griffin family.</p>
     </div>
-    <img id="photo" src="images/img.png">
 </div>
 
 <!-- Lõbusad faktid -->
 
 <div class="container">
+
     <div class="card">
-        <!-- Tee see osa ise! -->
+        <img src="images/majaa.png">
     </div>
     <div class="card">
-        <!-- Tee see osa ise! -->
+        <img src="images/chris.jpg"/>
     </div>
     <div class="card">
         <!-- Tee see osa ise! -->
@@ -37,9 +36,7 @@
 <!-- Video -->
 
 <div class="container" style="flex-flow: column">
-    <iframe id="video" src="https://www.youtube.com/embed/WLT7TDGzXGU?si=z5_UTSHfVFkCDm6X" title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/y41vObbUf9k?si=dfK6z1841LpAtjsS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <!-- max-width paneb ette piiri, et kui pikk võib tekst olla -->
     <p style="max-width: 55em">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a odio vel lorem congue
         facilisis. Praesent consequat leo arcu, in gravida erat fringilla in. Pellentesque dictum accumsan leo, in
@@ -50,10 +47,34 @@
 
 <div>
     <h1>Lisainfo</h1>
+
     <div class="container">
+
+    <div class="card">
+        <img id="photo3" src="images/mike.jpg"/>
+    </div>
+    <div class="card">
         <!-- Tee see osa ise! -->
     </div>
+    <div class="card">
+        <!-- Tee see osa ise! -->
+    <button id="button">vajuta mind</button>
+    </div>
+
 </div>
+        <img id="mees" src="images/herbert2.webp" alt="foto herbertist"/>
+</div>
+<script>
+
+    let button = document.getElementById("button");
+    let herbert = document.getElementById("mees");
+    let rotation = 0;
+    button.addEventListener('click', function (){
+        rotation += 90;
+        herbert.style.transform = "rotate(" + rotation.toString() + "deg)";
+    })
+
+</script>
 
 </body>
     
